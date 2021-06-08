@@ -1,2 +1,0 @@
-visiontransformers/common
-visiontransformers/formers
