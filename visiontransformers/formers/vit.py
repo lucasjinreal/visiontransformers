@@ -138,3 +138,19 @@ class ViT(nn.Module):
 
         x = self.to_latent(x)
         return self.mlp_head(x)
+
+
+def ViT_b16(image_size, num_classes):
+    return ViT(image_size=image_size, num_classes=num_classes, patch_size=16, dim=768, depth=12, heads=12, mlp_dim=3072)
+
+
+def ViT_b32(image_size, num_classes):
+    return ViT(image_size=image_size, num_classes=num_classes, patch_size=32, dim=768, depth=12, heads=12, mlp_dim=3072)
+
+
+def ViT_l16(image_size, num_classes):
+    return ViT(image_size=image_size, num_classes=num_classes, patch_size=16, dim=1024, depth=12, heads=12, mlp_dim=4096)
+
+
+def ViT_l32(image_size, num_classes):
+    return ViT(image_size=image_size, num_classes=num_classes, patch_size=32, dim=1024, depth=12, heads=12, mlp_dim=4096)

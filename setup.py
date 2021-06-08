@@ -44,7 +44,7 @@ setup(name='visiontransformers',
       long_description_content_type='text/markdown',
       license='Apache 2.0',
       packages=[
-          'visiontransformers/formers'
+          'visiontransformers/formers',
           'visiontransformers/common'
       ],
       # package_dir={'alfred': 'alfred'},
